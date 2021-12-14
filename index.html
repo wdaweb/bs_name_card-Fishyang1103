@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap.css">
+  <title>NameCard - BS 網格</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    .card-title h5 {
+      letter-spacing: 15px;
+    }
+
+    .text {
+      font-size: 10px;
+    }
+
+    .photo {
+      max-width: 100%;
+      height: 100%;
+    }
+
+    .photo_min {
+      display: none;
+    }
+
+
+    @media(max-width:576px) {
+      .name {
+        font-size: 40px;
+      }
+
+      .photo {
+        display: none;
+      }
+
+      .photo_min {
+        display: flex;
+        width: 100%;
+        height: 90%;
+        margin-top: -70px;
+      }
+
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <div class="container vh-100 d-flex justify-content-center align-items-center">
+    <div class="card" style="max-width: 700px;">
+      <div class="row g-0">
+        <div class="col-12 col-md-4 d-flex justify-content-center align-items-center asd">
+          <img class="photo" src="./photo.jfif">
+          <img class="photo_min" src="./photo-min.png">
+        </div>
+
+
+        <div class="col-12 col-md-8">
+          <div class="card-body  justify-content-center align-items-center">
+            <div class="card-title ps-5">
+              <h4>Heaven Staff</h4>
+              <h1 class="name">Kai-yu Yang</h1>
+              <h5 class="text-meuted">天堂訓練所</h5>
+            </div>
+            <div class="card-text ps-5 pt-4">
+              <div class="text">
+                住址：天堂路520巷13號4樓<br>
+                電話：02-20211204<br>
+                E-mail：heaven@example.com<br>
+                網站：https://tw.heaven.com/
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="container-md p-0">
+    <div class="vh-100 d-flex align-items-start align-items-md-center">
+      <div class="namebox border border-2">
+        <div class="row g-0">
+          <div class="col-ms-2 col-md-5 ">
+            <div class="logo h-100  d-flex justify-content-center align-items-center">
+              <img class="img-fluid" style="height: auto;"
+                src="https://images.unsplash.com/photo-1542272201-b1ca555f8505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+            </div>
+          </div>
+          <div class="col-ms-10 col-md-7">
+            <div class="card-body h-100 p-5">
+              <div class="card-title">
+                <h3>Heaven Staff</h3>
+                <h1>Kai-yu Yang</h1>
+                <h5 class="text-meuted">天堂訓練所</h5>
+              </div>
+              <div class="card-text mt-5">
+                住址：天堂路520巷13號4樓<br>
+                電話：02-20211204<br>
+                E-mail：heaven@example.com<br>
+                網站：https://tw.heaven.com/
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+</body>
+
+</html>
